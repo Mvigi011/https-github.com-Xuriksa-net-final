@@ -19,6 +19,7 @@ let names = ["Michael";"John"; "Jackson"]
 //names 
 //|> Seq.map (prefix "Hello")
 /////////////////////////
+
 let prefixWithHello = prefix "Hello"
 ////////////////////////
 let exclaim a = 
