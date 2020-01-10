@@ -3,13 +3,13 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>simple_practice</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="PracticeCode.fsx" />
+    <Compile Include="PracticeClass.fs" />
+    <None Include="ScriptExamples.fsx" />
     <Compile Include="Program.fs" />
   </ItemGroup>
-
-  <ItemGroup />
 
 </Project>
