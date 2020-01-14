@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="CurryingFunctions.fsx" />
     <None Include="PracticeCode.fsx" />
     <Compile Include="Program.fs" />
   </ItemGroup>
