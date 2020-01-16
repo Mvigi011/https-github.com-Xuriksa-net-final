@@ -4,12 +4,13 @@
 [<EntryPoint>]
 let main argv =
 
-   // printfn "Hello World from F#!";
-    let lists = [[0;1;1];[3;2];[];[5]]
 
-    let revList list = list |> List.map List.rev 
+   // printfn "Hello World from F#!";
+    //let lists = [[0;1;1];[3;2];[];[5]]
+
+   // let revList list = list |> List.map List.rev 
    // revList |> List.iter (printfn "%i")
-    printfn "%A" revList 
+   // printfn "%A" revList 
 
 
   // printfn "%d" revList
@@ -32,4 +33,6 @@ let main argv =
     list_items()
     Console.ReadKey() |> ignore *)
 
-0// return an integer exit code
+ // return an integer exit code
+ 0
+
