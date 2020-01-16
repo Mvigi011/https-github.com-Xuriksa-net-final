@@ -12,7 +12,7 @@ let main argv =
     printfn "%A" revList 
 
 
-  //  printfn "%d" revList
+  // printfn "%d" revList
 
   // f# tutorial on List
    (* let list_items() =
