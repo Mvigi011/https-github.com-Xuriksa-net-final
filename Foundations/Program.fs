@@ -54,5 +54,19 @@ let listFunction()=
 
     printfn "doulbe the list elements: %A" rlist2
 
+    [11;12;13;14]
+    |> List.filter(fun a -> (a % 2)= 0)
+    |> List.map (fun a -> a * 3)
+    |> printfn "Even triples : %A"
+
+    let multiFunc x = x * 5
+    let addFunc y = y + 5
+
+    let multiAdd = multiFunc >> addFunc 
+    let addMulti = multiFunc << addFunc
+
+    printfn " multil and add : %i" (multiAdd 5)
+    printfn " multil and add : %i" (addMulti 5)
+
 listFunction()
 Console.ReadKey() |> ignore
