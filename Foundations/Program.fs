@@ -48,7 +48,7 @@ funcRecursion()
 Console.ReadKey() |> ignore *)
 
 //example 4
-let listFunction()=
+(* let listFunction()=
     let rList = [10;8;4]
     let rlist2 = List.map(fun x -> x / 2) rList
 
@@ -66,7 +66,77 @@ let listFunction()=
     let addMulti = multiFunc << addFunc
 
     printfn " multil and add : %i" (multiAdd 5)
-    printfn " multil and add : %i" (addMulti 5)
+    printfn " multil and add : %i" (addMulti 5) 
 
 listFunction()
+Console.ReadKey() |> ignore *)
+
+// example 5 
+
+
+(* let mathOperation() =
+    let number = 2
+    printfn "Type : %A" (number.GetType())
+    printfn "A float : %.2f" (float number)
+    printfn "A Int : %i" (int 3.14)
+mathOperation()
+
+Console.ReadKey() |>  *)
+
+// example 6
+
+(* let stringManipulation()=
+    let str = "Hello world" 
+    let str2 = @"I ignore back slash"
+    let str3 = """ " doesnt affect quotes" """
+    let str4 = str + " " + str2
+
+    printfn "Length of the phrase : %i" (String.length str4)
+
+    printfn "%c" str.[1]
+
+    printfn "1st element : %s" (str.[0..5])
+
+    let upperStr = String.collect(fun c -> sprintf"%c,"  c) "Commas"
+    printfn "Commas : %s " upperStr 
+
+    printfn "Any upper : %b" (String.exists (fun c -> Char.IsUpper(c))str)
+
+    printfn "Number : %b" (String.forall (fun c -> Char.IsDigit(c)) "1234")
+
+    let string1 = String.init 10(fun i -> i.ToString())
+    printfn "numbers : %s" string1
+    String.iter(fun c-> printfn"%c" c) "print me"
+
+stringManipulation()
+Console.ReadKey() |> ignore *)
+
+//example 7 
+(* let loopPrac() =
+    let magicNumber = "7"
+    let mutable guess = ""
+    
+    while not (magicNumber.Equals(guess)) do
+        printf "guess number "
+        guess <- Console.ReadLine()
+    printfn "you guessed it"
+loopPrac()
+Console.ReadKey() |> ignore *)
+
+let loopPrac() =
+   for i = 1 to 10 do
+        printfn "%i" i
+
+   for i =10 downto 1 do
+        printfn "%i" i
+
+   for i in [1..10] do
+        printfn "%i" i
+
+   [1..10] |> List.iter(printfn "Num: %i")
+
+   let addSum = List.reduce (+) [1..3]
+   printfn "product : %i" addSum
+
+loopPrac()
 Console.ReadKey() |> ignore
