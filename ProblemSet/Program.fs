@@ -12,6 +12,7 @@ let (.+) (1,2)(1,3)  *)
 
 //let (.+) (a,b)(c,d)
 //let a,b,c,d = 1.0,2.0,2.0,3.0
+
 // this is the second attempt but just keep ending up with 7 so 
 
 (*let (.+) (a,b)(c,d) = 
@@ -62,17 +63,12 @@ printfn "interleave list %A" interList
 
 // cutting even list in half
 // Function to cut a list where the first list is size n.
-let gencut (n, list) = 
-    let rec aux = function
-        | 0, xs, ys -> (List.rev xs,ys) //must return xs reversed since you are adding the head of ys to the beginning of the list each time.
-        | n, xs, [] -> (xs, [])
-        | n, xs, ys -> aux(n-1, List.head ys :: xs, List.tail ys)
-    aux (n, [], list)
-let cut list = 
-    let n = (List.length list)/2
-    ///gencut(n,list)
-    let newList = gencut(n,list)
-    printfn "the new list is %A" newList;; 
+
+//let cut list = 
+    //let n = (List.length list)/2
+    ///slice(n,list)
+    //let newList = slice(n,list)
+   // printfn "the new list is %A" newList;; 
 
     //////////////////////////////////
     // second attempt
