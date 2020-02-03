@@ -45,6 +45,7 @@ printfn "%A" printPowSet;;
 
 //let bubbleSortArr = bubbleSortArray[3;1;4;1;5;9;2;6;5]
 //printfn "%A" bubbleSortArr *)
+//
 
 // pronblem 24
 (* cant figure out*)
