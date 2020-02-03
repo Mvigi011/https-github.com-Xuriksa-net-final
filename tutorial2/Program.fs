@@ -3,7 +3,7 @@
 open System
 
 let map_prac() =
-
+    //
     let cust =
         Map.empty.
             Add("mike", 300.57).
